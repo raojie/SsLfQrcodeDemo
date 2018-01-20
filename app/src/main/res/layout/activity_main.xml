@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shensilandfone.demo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_tv"
+                style="@style/wrap_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCCCC"
+                    android:inputType="textMultiLine"
+                    android:maxLines="9"
+                    android:text=""
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgQrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:maxHeight="200sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额(单位分):"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/amountEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商户号:"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/merchantNoEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="301053148161998" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="终端号:"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/terminalNoEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="62841967" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="硬件编号:"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/hardwareNoEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2C3803661994" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/payBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="消费(主扫)"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/preBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="消费(被扫)"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/refundBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退款"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/preOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="预下单"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/queryOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询订单结果"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/countDownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="80"
+        android:textSize="35dp" />
+</RelativeLayout>
